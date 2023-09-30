@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimationWeb</title>
+    <style type="text/css">
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+
+        }
+     .parent{
+        width: 70%;
+        height: 92%;
+        background: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+       border-bottom:50px   solid  rgb(233, 183, 183);
+       border-top: 50px   solid  rgb(233, 183, 183);
+       border-left:  30px   solid  rgb(233, 183, 183);
+       border-right:  30px   solid    rgb(233, 183, 183);
+       animation:change 5s infinite;
+      
+     }
+     .parent .pho{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 62vw;
+        top: .5vw;
+      
+     }
+
+     .line {
+        position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(-0% ,-50%);
+     }
+     h3{ 
+        margin: 1vw 0vw;
+        height: 82px;
+        width: 2px;
+        background: #929090;
+       
+     }
+     .l{
+     /*   top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;*/
+        height: 82px;
+        width: 2px;
+        background-color: rgb(255, 255, 255);
+ 
+     }
+  @keyframes change{
+ 
+    0%{
+        border-bottom:50px   solid rgb(183, 245, 226);
+        border-top: 50px   solid  rgb(183, 245, 226);
+        border-left:  30px   solid rgb(183, 245, 226);
+        border-right:  30px   solid   rgb(183, 245, 226);
+       
+    }
+    40%{
+        border-bottom:50px   solid  rgb(118, 196, 242);
+        border-top: 50px   solid   rgb(118, 196, 242);
+        border-left:  30px   solid  rgb(118, 196, 242);
+        border-right:  30px   solid     rgb(118, 196, 242);
+       
+    }
+    100%{
+        border-bottom:50px   solid  rgb(226, 136, 103);
+        border-top: 50px   solid   rgb(226, 136, 103);
+        border-left:  30px   solid   rgb(226, 136, 103);
+        border-right:  30px   solid   rgb(226, 136, 103);
+       
+    }
+  }
+        .center{
+            width: 80%;
+            height: 85%;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translate(0%, -50%);
+        }
+        .imgContaner{
+            height: 100%;
+            width:  0%;
+            position: absolute;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+      .text {
+            height:115px;
+            width: 400px;
+            overflow: hidden;
+            font-size: 2.7vw;
+            position: absolute;
+            bottom: 280px;
+            left: -40px;
+            z-index: 999;
+            color: rgb(158, 148, 148);
+            
+        }
+   .text h1{
+         position: absolute;
+        font-weight: 900;
+        top: 100px;
+        
+       }
+       
+       .paragraph {
+        height:250px;
+        width: 350px;
+        overflow: hidden;
+        font-size: 1em;
+        position: absolute;
+        bottom: 5px;
+        left: -40px;
+        z-index: 999;
+        color: rgb(16, 205, 219);
+        
+        
+    }
+   
+    .paragraph p{
+        padding: 2vw .4vw;
+        position: absolute;
+        top: 260px;
+        font-weight: bold;
+       }
+ 
+
+/*----------SECOND PAGE---------------------------------------------------------------------------------*/
+.main2{
+   display: none;
+    width: 100%;
+    height:100%;
+   background-color:rgb(255, 255, 255);
+   position: relative;
+
+}
+.parent1{
+    width: 70%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);;
+
+}
+.child{
+    height: 90%;
+    width: 100%;
+    background-color:rgb(205, 245, 237);
+    overflow: hidden;
+   cursor: pointer;
+   animation: colorBorder 2s infinite;
+ /*  animation: colorChang 5s linear infinite;*/
+/* border: 1px solid white;*/
+/* box-shadow: .2px .2px 15px 2px rgb(91, 88, 88);*/
+}
+
+@keyframes colorBorder {
+  from{
+    transition: .2s;
+     box-shadow: .2px .2px 15px 2px rgb(91, 88, 88);
+  }
+  to{
+    transition: .2s;
+    box-shadow: .2px .2px 15px 2px rgb(255, 255, 255);
+  }
+}
+/*   @keyframes colorChang{
+  from{
+    background-color: darkseagreen;
+  }
+  to{
+    background-color: rgb(67, 68, 68);
+  }
+}
+*/
+.hed{
+display: flex;
+align-items: center;
+justify-content: center;
+/*  border-bottom: 1px solid rgb(163, 163, 163);*/
+padding: 1vw 0vw;
+color: black;
+}
+ul li{
+    overflow: hidden;
+    float: left;
+    margin: 1vw 2vw;
+    
+}
+.hed #w{
+    margin:0.4vw -13vw;
+    font-size: 2em;
+    font-weight: bold;
+}
+#line{
+    position: relative;
+    left: 13vw;     
+    margin: 7px 0vw;
+}
+.body{
+width: 100%;
+height: 100%;
+/*background: #000;*/
+display: flex;
+}
+.leftpg{
+width: 70%;
+position: relative;
+/*  background: #d24949;*/
+}
+
+.textCont{
+height: 65%;
+/*background-color: #ada8f2;*/
+padding: 3vw;
+/*    border-bottom: 1px solid rgb(146, 142, 142);*/
+color: rgb(0, 0, 0);
+
+}
+.textCont h1{
+position: relative;
+font-size: 5vw;
+/*  color: rgb(74, 72, 72);*/
+font-weight:100;
+/*font-family: Bradley Hand ITC;*/
+/* font-family: Gabriola;*/
+width: 93%;
+
+}
+.textCont h1::selection{
+color: rgb(255, 255, 255);
+}  
+.textCont p::selection{
+color: rgb(255, 255, 255);
+}
+
+.textCont p {
+
+padding: 1.2vw 0vw;
+font-weight: bold;
+}
+.textCont .btnview{
+width: 120px;
+height: 40px;
+font-weight: bolder;
+background: #ffffff;
+border-radius: 30px;
+color: rgb(3, 62, 63);
+display: flex;
+justify-content: center;
+align-items: center;
+margin:1vh 0vw ;
+font-size: 13px;
+
+}
+.leftpgBotom{
+margin: 1vw -2vw;
+color:rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.cont{
+width: 40%;
+/* background: #000;*/
+color: rgb(0, 0, 0);
+padding: 0vw 1vw;
+}
+.cont h4{
+font-weight: bold;
+font-size: 1.2vw;
+
+}
+.cont p{
+font-size: 12px;
+/* color: rgb(49, 47, 47);*/
+padding:1vw 0vw;
+}
+
+.photo {
+width: 100px;
+height: 100px;
+background-color: black;
+/*background-color: aqua;*/
+
+}
+img{
+width: 100%;
+height: 100%;
+background-blend-mode: hard-light;
+object-fit: cover; 
+
+}
+/* img:hover{
+transform: scale(.9);
+transition: .6s;
+
+} */
+.circle{
+/*background-color: rgb(160, 165, 164);*/
+width: 100px;
+height: 100px;
+margin: 0vw 4vw;
+align-items: center;
+display: flex;
+justify-content: center;
+color:rgb(93, 92, 91);
+border-radius: 50%;
+font-size: 12px;
+font-weight: bold;
+rotate: -10deg;
+border: 1px solid rgb(123, 122, 122);
+
+}
+
+.rightpg{
+width: 30%;
+height: 100%;
+/*   background-color: #775c5c;*/
+
+}
+.btnposition{
+margin: 5vw 15vw;
+position: absolute;
+
+border-radius: 50%;
+/*border: 5px solid black;*/
+animation: alert 2s infinite;
+}
+@keyframes alert {
+from{
+transition: 1s;
+border: 10px solid rgb(128, 125, 125);
+}
+to{
+transition: 1s;
+border: 10px solid transparent;
+}
+}
+
+
+.btn{
+background:rgb(6, 109, 112);
+
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(255, 255, 255);
+border: 1px solid white;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+cursor:pointer;
+
+}
+.btn::selection{
+color: #000000;
+}
+.image{
+position:absolute;
+height: 86%;
+
+overflow: hidden;
+/* background-color: aquamarine;*/
+}
+.ig{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#pho{
+margin:  0vw 2vw;
+position: relative;
+left: 37vw;
+
+}
+  
+
+/*------css-----------------------------------------------------------------------*/
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="parent">
+        <div class="line">
+            <h3><div class="l"></div></h3>
+            <h3><div class="l"></div></h3>
+            <h3><div class="l"></div></h3>
+            <h3><div class="l"></div></h3>
+        </div>
+        <div class="pho"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+0lEQVR4nO2ZXWiOYRjHfxuzYT6TCEuGIREnvhYHhINxZkkiB0ypFQdyQBzMcqBwMMmRAyRaomROiJGvKZ+18lG+xsKWj8Q2e3TX/63bau+ej/d13wfvr55a7+7rf//v93me+7qv64UcObwkH1gIbAeOAmeAU8AhoBIYhOcUAjuBFiBIc30EKvCUScBTy+wjoA7YBawH1unvW/p/B3AcWIJHjAbeyGATMK+P8Xt73KHzQDEecFaGGoGBId+hicBm4J1iL+DBI9UN/ALKYsSXAG1azHIcUi0TZmeKyz5pnMQhF2ViYwKN2dJoxiH3ZKKvFzwdA4AuXQU44qUWEuf9sPktnTCbRVZoloGpCTTydTe6Xd6RRi2kPIHGBGm04pBzMrEmgcYyadzEIXtkoiaBRo00ant8HmTgCk2FAhqIT+r8tdLlQioV8AXIi3lO65DGYhzyQCZM7RGH/sABHzL7e5mYkkBjkTSu4ZAGmVibQGOLNE7gkCqZeBXz8TK73mtpmALMGQUqjAJViFEzepsyer3eF6fkAZ+BP8CICHFz9QU8zsK2G0TdflPUK9DUJ2E5rJiDPi2kQoFvQ9bf44DvipmJR+QDd6z627SGemM4cF1jTb3vHdOBnzI4Ns24WdZpdwye0iKT49OMmaExz/CYDzJpaozemKwxL/CYHzI5rI8WUKCmnpdMs3pc/dKMG2WNM4263nCy/ZbrmBKo5xu2snyuQ6PzhcwHTiurm8C7IfPISGX0QLFGYwH/mUJgA3DfWnkncCRiO2ew7l6npWOa4JuAoiz6p1g/DbRaE3/TAkoT6JbquPLV0v0E7AaGZjprV0s8NdETYFuGJxoCbAUeWvOYEnpHH5tHKIzRK5awadmsIPssBW5Y816NeLL+B/Oc3paQSXSr+f+sspJsU9zfH+usLdIkMVeUyIPxcixqcJl2ky61/V0zx+rYm8NpaGr1DVzCHy7L0/4oQakcYZoLvlBlJd3QtGe45Mzk1R5lIYHnV1Hk+5kjRw568hc/vZHADDHNcwAAAABJRU5ErkJggg==">
+        </div>
+        <div class="center">
+            <div class="text">
+                <h1>Beautiful</h1>
+                <h1>love</h1>
+                <h1>Imotions</h1>
+                <h1>Nature</h1>
+             
+            </div>
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                     elit. Repellendus rem eius earum cupiditate autem 
+                     consequuntur doloresulla possimus 
+                    </p>
+                <p> dolor sit amet consesicing elit. Asequi blanditiis illum iste sint corporis impedit possimus porro id officiis quasi!</p>
+                <p>Lorem, ipsum  adipisicing elit. Quae provident, quofficiis a vel animi ipsa?</p>
+                <p>Lorem, ipsum  adipisicing elit. Quae provident, quofficiis a vel animi ipsa?</p>
+          
+              </div>
+
+     <!--  FIRST IMG  -->
+
+            <div class="imgContaner">
+          <img src="https://images.unsplash.com/photo-1682687220198-88e9bdea9931?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="">
+        </div>
+
+            <!-- SENCOND IMG -->
+            <div class="imgContaner">
+
+              <img src="https://images.unsplash.com/photo-1693895860417-dc9da0099757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80" alt="">
+            </div>
+
+            <!-- THREE IMG -->
+            <div class="imgContaner">
+               
+                <img src="https://images.unsplash.com/photo-1520526088408-acacee4077c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="">
+           
+          
+        </div>
+
+        <div class="imgContaner">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="">
+
+        </div>
+        </div>
+      </div>
+    </div>
+<!-- ---SECOND wEBpAGE------------------------------------------------------------------------------------------------------ -->
+
+
+<div class="main2">
+    <div class="parent1">
+        <!-- <div class="cursor"></div> -->
+       
+            <div class="child">
+
+                <div class="header">
+                    <div class="hed">
+                        <ul>
+                            <li id="w">W</li>
+                            <li>About Us</li>
+                            <li>Wines</li>
+                            <li>Our Story</li>
+                            <li>Contact</li>
+                            <li>EN</li>
+                            <li id="line"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPUlEQVR4nO3VwQkAIAxD0ezUae04dqFsoBN4ECpe/oOcC4FQCUC3SFek1+PUn8PDs70x4Ig5AW2C7wRAdzYYDqfKe2DzhAAAAABJRU5ErkJggg==" class="imgs">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              <div class="body">
+                <div class="leftpg">
+                    <div class="textCont">
+                        <h1 id="ist">Just relax,and go with the flow</h1>
+                        <p id="ist">Wine Relax is a premium semi-sweet wine produced from Rkatsiteli graps using the ancient lecthnology.Which has been used by Georgian winemakers for 800 years.</p>
+                        <div id="ist" class="btnview">View more</div>
+                    </div>
+
+                    <div class="leftpgBotom">
+                  
+                        <div id="anima" class="photo">
+                            <img src="https://ik.imagekit.io/sheryians/Group_3_zvLrrwuCR.png" alt="">
+                        </div>
+                       <div id="anima" class="cont">
+                        <h4 id="anima">Come to the wine-tasting</h4>
+                        <p id="anima">Only on july 1 there will be a tasting of our new wines in City.To sign up for the tasting..</p>
+                       
+                       </div>
+                        <div id="anima" class="circle">Read more</div>
+                    
+                   
+                    </div>
+                </div>
+
+                <div class="rightpg">
+                    <div class="image">
+                    <div class="ig">
+                        <img src="https://ik.imagekit.io/sheryians/3_-Jysh0bCc.png" alt="" class="im1"   id="pho">
+                        <img src="https://ik.imagekit.io/sheryians/4_SvKl0y0Y7.png" alt="" class="im2"  id="pho">
+                        <img src="https://ik.imagekit.io/sheryians/project_20220729_1711234-01_AqKEbRv65.png" alt=""class="im3"  id="pho">
+                        <img src="https://ik.imagekit.io/sheryians/2_syW2gfMjS.png" alt="" class="im4"  id="pho">
+                      
+                    </div>  
+                    </div>
+                    <div class="btnposition">
+                        <div class="btn">Next</div>
+                       </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+<!-- --------JAVASCRIPT PROGRAMME-------------------------------------------------------------------------------------------------- -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+
+ /*FOR DISPLAY 9BLOCK AND NONE*/
+    var btn = document.querySelector(".pho img");
+    var page = document.querySelector(".main2");
+    var masterpg = document.querySelector(".main");
+
+    flag = 0;
+    btn.addEventListener("click",function(){
+        page.style.display ="block";
+        masterpg.style.display = "none";
+
+    })
+ 
+
+/*FIRST  Animation programe of FIRST WEBPAGE*/
+
+gsap.to(".imgContaner ",{
+        ease:Expo.easeInOut,
+        width: "100%",
+        stagger:2,
+        duration:2,
+        repeat:-1,
+ })
+gsap.to(".text h1",{
+    ease:Expo.easeInOut,
+    top:"-10px",
+    stagger:2,
+    duration:2,
+     repeat:-1,
+})
+gsap.to(".paragraph p",{
+    ease:Expo.easeInOut,
+    top:"-10px",
+    stagger:2,
+    duration:2,
+     repeat:-1,
+})
+gsap.to(".text h1 ",{
+    ease:Expo.easeInOut,
+    delay:2,
+    opacity:0,
+    x:"100px",
+         
+    stagger:2,
+    duration:2,
+    repeat:-1,
+})
+gsap.to(".paragraph p ",{
+    ease:Expo.easeInOut,
+    delay:2,
+    opacity:0,
+    x:"100px",
+       
+    stagger:2,
+    duration:2,
+    repeat:-1,
+})
+gsap.to(".line .l",{
+    ease:Expo.easeInOut,
+   y:100,
+    stagger:2,
+    duration:2,
+     repeat:-1,
+     opacity:0,
+})
+
+
+
+
+/*----------SECOND JAVASCRIPT PROGRAM---------------------------------------------------------------------------*/
+
+
+/*for selections*/
+var main  = document.querySelector(".main2");
+ var bdy = document.querySelector(".child");
+ var crs = document.querySelector(".cursor");
+ var btn = document.querySelector(".btnposition .btn");
+ var img = document.querySelector(".ig");
+ var im4 = document.querySelector(".ig,im4");
+ var im3 = document.querySelector(".ig,im3");
+ var im2 = document.querySelector(".ig,im2");
+ var im1 = document.querySelector(".ig,im1");
+ var tex = document.querySelector(" .cont");
+ var tex2 = document.querySelector(".textCont ");
+ var tex3 = document.querySelector(".hed");
+
+
+
+ /*here using timeline */
+var anmi = gsap.timeline();
+
+anmi.from("li",{
+y:-10,
+stagger:.1,
+opacity:0,
+})
+
+anmi.from(".textCont #ist",{
+x:0,
+stagger:.2,
+opacity:0,
+
+})
+
+anmi.from(".leftpgBotom #anima",{
+x:0,
+stagger:.3,
+opacity:0,
+
+})
+
+
+anmi.from("#pho",{
+stagger:.3,
+opacity:0,
+
+})
+
+anmi.from(".btnposition",{
+stagger:.3,
+opacity:0,
+
+})
+
+flag =0;
+btn.addEventListener("click",function(){
+
+if(flag==0){
+tex.style.color = "#000";
+tex3.style.color = "#000";
+tex2.style.color = "#000";
+im4.style.left="0vw";
+im4.style.position="relative";
+btn.style.backgroundColor = "tomato"
+bdy.style.backgroundColor = "tomato";
+main.style.backgroundColor = "tomato";
+flag=1;
+bdy.style.transition="1.4s";
+im3.style.transition=".3s";
+}
+
+else if(flag==1)
+{
+main.style.backgroundColor = "lightblue"
+btn.style.backgroundColor = "lightblue"
+bdy.style.backgroundColor = "lightblue"
+im4.style.left="-25vw";
+im4.style.position="relative";
+bdy.style.transition="2s";
+flag =2;
+im3.style.transition=".3s";
+}
+else if(flag==2)
+
+{ 
+btn.style.backgroundColor = "rgb(219, 207, 205";
+bdy.style.transition="2s";
+bdy.style.backgroundColor = "rgb(219, 207, 205";
+main.style.backgroundColor = "rgb(219, 207, 205";
+im3.style.left="-49.4vw";
+im3.style.position="relative";
+im3.style.transition=".3s";
+
+flag =3;
+}
+else if(flag==3){
+btn.style.backgroundColor = "#000";
+bdy.style.transition="2s";
+main.style.backgroundColor = "#000";
+bdy.style.backgroundColor = "#000";
+tex.style.color = "#fff";
+tex3.style.color = "#fff";
+tex2.style.color = "#fff";
+im2.style.left="-74vw";
+
+im2.style.position="relative";
+im2.style.transition=".3s";
+flag =0;
+
+
+}
+})
+
+
+   </script>
+</body>
+</html>
